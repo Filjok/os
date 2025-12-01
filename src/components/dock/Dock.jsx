@@ -5,7 +5,7 @@ import gsap from "gsap";
 import useWindowStore from "../../store/window";
 
 const Dock = () => {
-  const { openWindow, closeWindow, focusWindow, windows } = useWindowStore();
+  const { openWindow, closeWindow, windows, focusWindow } = useWindowStore();
   const DockRef = useRef(null);
 
   useEffect(() => {

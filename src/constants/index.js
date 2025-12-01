@@ -48,12 +48,7 @@ const dockApps = [
     icon: "safari.png",
     canOpen: true,
   },
-  {
-    id: "photos",
-    name: "Gallery", // was "Photos"
-    icon: "photos.png",
-    canOpen: true,
-  },
+
   {
     id: "contact",
     name: "Contact", // or "Get in touch"
@@ -109,12 +104,16 @@ const techStack = [
     items: ["GSAP", "Anime.js"],
   },
   {
+    category: "Styling",
+    items: ["HTML", "SASS", "CSS3", "SCSS", "Bootstrap"],
+  },
+  {
     category: "State Management",
     items: ["ContextAPI", "Zustand"],
   },
   {
-    category: "Styling",
-    items: ["HTML", "Sass", "CSS3", "SCSS", "Bootstrap"],
+    category: "Design Tools",
+    items: ["Figma", "Adobe XD", "Zeplin", "Blender"],
   },
 
   {
@@ -132,20 +131,6 @@ const socials = [
     link: "https://github.com/JavaScript-Mastery-Pro",
   },
   {
-    id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
-  {
-    id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
-  },
-  {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
@@ -154,63 +139,7 @@ const socials = [
   },
 ];
 
-const photosLinks = [
-  {
-    id: 1,
-    icon: "/icons/gicon1.svg",
-    title: "Library",
-  },
-  {
-    id: 2,
-    icon: "/icons/gicon2.svg",
-    title: "Memories",
-  },
-  {
-    id: 3,
-    icon: "/icons/file.svg",
-    title: "Places",
-  },
-  {
-    id: 4,
-    icon: "/icons/gicon4.svg",
-    title: "People",
-  },
-  {
-    id: 5,
-    icon: "/icons/gicon5.svg",
-    title: "Favorites",
-  },
-];
-
-const gallery = [
-  {
-    id: 1,
-    img: "/images/gal1.png",
-  },
-  {
-    id: 2,
-    img: "/images/gal2.png",
-  },
-  {
-    id: 3,
-    img: "/images/gal3.png",
-  },
-  {
-    id: 4,
-    img: "/images/gal4.png",
-  },
-];
-
-export {
-  navLinks,
-  navIcons,
-  dockApps,
-  blogPosts,
-  techStack,
-  socials,
-  photosLinks,
-  gallery,
-};
+export { navLinks, navIcons, dockApps, blogPosts, techStack, socials };
 
 const WORK_LOCATION = {
   id: 1,
@@ -222,52 +151,41 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Techwarelab website",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[5vh] left-5", // optional: Finder window position
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Techwarelab website.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "Designed and developed a modern corporate website for TechwareLab using Next.js and GSAP,featuring 3D animations, smooth interactions, and engaging micro-transitions.",
+            "Focused on delivering a high-performance, responsive, and visually dynamic user experience that enhanced brand presence and Interactivity.",
+            "Collaborated closely with the design team to implement a sleek UI/UX that aligned with TechwareLab's innovative ethos.",
+            "The project showcased my ability to blend cutting-edge web technologies with creative design to produce a standout digital platform.",
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "techwarelab.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://tl-website-dev.techlabz.in/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "techwarelab.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           imageUrl: "/images/project-1.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
         },
       ],
     },
@@ -275,60 +193,48 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "Infithra website",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-52 right-80",
-      windowPosition: "top-[20vh] left-7",
+
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "Infithra website.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            "Built an interactive, user-focused landing page for an HRMS product using Angular with custom animations and modern UI patterns.",
+            "Designed the interface with a user-driven approach, ensuring clarity, engagement, and smooth navigation to highlight product features and drive conversions.",
+            "Implemented responsive design principles to ensure optimal performance across devices, enhancing accessibility and user satisfaction.",
+            "This project demonstrated my skills in Angular development, UI/UX design, and creating engaging web experiences tailored to user needs.",
           ],
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "Infithra.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
-          position: "top-20 left-20",
+          href: "https://infithra.com/",
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "infinthra.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
-          position: "top-52 left-80",
+
           imageUrl: "/images/project-2.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 left-5",
         },
       ],
     },
-
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "ActiveFitness website",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -336,44 +242,119 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "ActiveFitness website.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+            "Developed a customizable e-commerce platform where websites can be dynamically built and managed through an admin panel with full component-level control.",
+            "Implemented advanced features such as modular UI components, real-time updates, and flexible layout management to provide a scalable and user-friendly site builder experience.",
+            "Focused on delivering a seamless user experience with intuitive design and robust functionality, enabling users to create and modify their online stores effortlessly.",
+            "This project highlighted my expertise in creating dynamic web applications tailored to user empowerment.",
           ],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "ActiveFitness.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
-          position: "top-10 right-20",
+          href: "https://activefitnessstore.com/",
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "ActiveFitness.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          imageUrl: "/images/project-3.png",
+        },
+      ],
+    },
+    // ▶ Project 4
+
+    {
+      id: 8,
+      name: "Meloc website",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-80",
+      windowPosition: "top-[33vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: " Meloc website.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "Designed and developed an e-commerce website with a modern, visually appealing UI enhanced by smooth animations and micro-interactions.",
+            "Focused on delivering a seamless shopping experience, with responsive design, intuitive navigation, and engaging product displays to boost user engagement and conversions.",
+            "Collaborated with the design team to ensure brand consistency and a user-centric approach throughout the site.",
+            "This project showcased my ability to blend aesthetic design with functional e-commerce features using Next.js and GSAP.",
+          ],
+        },
+        {
+          id: 2,
+          name: " Meloc.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://meloc.ge/",
+        },
+        {
+          id: 4,
+          name: "Meloc.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           imageUrl: "/images/project-3.png",
         },
+      ],
+    },
+    // ▶ Project 5
+
+    {
+      id: 9,
+      name: " BVB PRO",
+      icon: "/images/folder.png",
+      kind: "folder",
+
+      children: [
         {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
+          id: 1,
+          name: " BVB PRO.txt",
+          icon: "/images/txt.png",
           kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "Designed and developed a high-impact landing page for a professional beach volleyball event in Dubai using Next.js, SCSS, and GSAP.",
+            "Focused on delivering a visually dynamic experience with smooth scroll-triggered animations,responsive design, and performance-optimized layout.",
+            "Created engaging motion effects and interactive sections to boost event visibility and audience engagement.",
+            "This project highlighted my ability to combine cutting-edge web technologies with creative design to produce a standout digital platform for event promotion.",
+          ],
+        },
+        {
+          id: 2,
+          name: " BVB-PRO.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://bvbpro.com/",
+          position: "top-10 right-20",
+        },
+        {
+          id: 4,
+          name: " BVB PRO.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/project-3.png",
         },
       ],
     },
@@ -388,46 +369,19 @@ const ABOUT_LOCATION = {
   kind: "folder",
   children: [
     {
-      id: 1,
-      name: "me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
-    },
-    {
-      id: 2,
-      name: "casual-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
-    },
-    {
-      id: 3,
-      name: "conference-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
-    },
-    {
       id: 4,
       name: "about-me.txt",
       icon: "/images/txt.png",
       kind: "file",
       fileType: "txt",
       position: "top-60 left-5",
-      subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      subtitle: "UI/UX Developer by day, and batman by night.",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "Hey! I’m Filjo 👋 — a UI/UX and frontend developer who spends an unhealthy amount of time making pixels behave.",
+        "I work with JavaScript, React, Next.js, SCSS, and all the usual suspects… basically everything except calm and normal sleep schedules.",
+        "I’m obsessed with clean UI, smooth animations, and writing code that doesn’t scream for help when someone opens the file.",
+        "I know Tailwind and Bootstrap too, but let’s be honest — I only use them when life forces me. SCSS is my real love story ❤️.",
+        "When I’m not coding, you’ll find me tweaking animations no one asked for, pretending coffee is a personality trait, or Googling problems I created myself 😅.",
       ],
     },
   ],
@@ -446,8 +400,6 @@ const RESUME_LOCATION = {
       icon: "/images/pdf.png",
       kind: "file",
       fileType: "pdf",
-      // you can add `href` if you want to open a hosted resume
-      // href: "/your/resume/path.pdf",
     },
   ],
 };
@@ -461,22 +413,36 @@ const TRASH_LOCATION = {
   children: [
     {
       id: 1,
-      name: "trash1.png",
-      icon: "/images/image.png",
+      name: "Tailwind",
+      icon: "/images/txt.png",
       kind: "file",
-      fileType: "img",
-      position: "top-10 left-10",
-      imageUrl: "/images/trash-1.png",
+      fileType: "txt",
+      position: "top-5 left-10",
+      description: [
+        "Yes, I know Tailwind. I’ve even used it enough to memorize half the class names accidentally.",
+        "But honestly… I’m an SCSS believer. Nesting, variables, mixins—it's like writing poetry.",
+        "Tailwind feels like someone handed me a bag of utility classes and said ‘good luck’.",
+        "SCSS, on the other hand? Clean, elegant, organized—like a well-folded bedsheet.",
+        "So yeah, I use Tailwind when I have to… but SCSS is still the superior love of my syntax life.",
+      ],
     },
+
     {
       id: 2,
-      name: "trash2.png",
-      icon: "/images/image.png",
+      name: "Bootstrap",
+      icon: "/images/txt.png",
       kind: "file",
-      fileType: "img",
-      position: "top-40 left-80",
-      imageUrl: "/images/trash-2.png",
+      fileType: "txt",
+      position: "top-5 left-10",
+      description: [
+        "I know Bootstrap—I've used it enough to recognize a Bootstrap website from 3 kilometers away.",
+        "But let’s be honest: every Bootstrap site looks like its cousin… who looks like its cousin… who looks like its cousin.",
+        "It’s great for quick layouts, but sometimes it feels like fighting the framework just to look original.",
+        "SCSS gives me freedom; Bootstrap gives me déjà vu.",
+        "So yes, I can use Bootstrap—but only if the project absolutely insists on looking ‘Bootstrap-ish’.",
+      ],
     },
+    ,
   ],
 };
 

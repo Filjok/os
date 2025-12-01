@@ -12,12 +12,9 @@ const Terminal = () => {
       </div>
       <div className="techstack">
         <p>
-          <span className="">@filjo kurian % </span>
-          show tech stack
+         Creative Frontend Developer
+         
         </p>
-        <div className="label">
-          <p>category</p>
-        </div>
 
         <ul className="content">
           {techStack.map(({ category, items }, index) => (

@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 import WindowControls from "../components/windowsControls/WindowControls";
 import WindowWrapper from "../hoc/WindowWrapper";
-import { blogPosts } from "../constants";
 
 const Safari = () => {
   return (

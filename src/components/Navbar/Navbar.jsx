@@ -1,3 +1,4 @@
+import { BatteryIcon, WifiIcon } from "lucide-react";
 import { navIcons, navLinks } from "../../constants";
 import useWindowStore from "../../store/window";
 import styles from "./Navbar.module.scss";
@@ -43,6 +44,19 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+
+      <div className={styles.mobileNav}>
+        <div>
+          <time> {dayjs().format("h:mm A")}</time>
+        </div>
+
+        <div className={styles.dynamicIsland}></div>
+
+        <div className={styles.mobileIcons}>
+          <WifiIcon className="icon" color="#fff"  size={16}/>
+          <BatteryIcon className="icon" color="#fff" size={16} />
+        </div>
+      </div>
     </>
   );
 };

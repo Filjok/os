@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 html,
 body,
@@ -187,7 +187,7 @@ main {
   color: #1e3a8a; /* text-blue-900 */
   border-radius: 0.375rem; /* rounded-md */
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25); /* shadow-2xl */
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto", monospace;
   font-weight: 500;
 }
 
@@ -259,7 +259,7 @@ main {
       color: #2b7fff;
       font-size: 14px;
       font-weight: 500;
-      font-family: "Roboto Mono", monospace;
+      font-family: "Roboto", monospace;
     }
   }
 }
@@ -546,7 +546,7 @@ main {
       font-weight: 500;
       color: #9ca3af; // gray-400
       margin-bottom: 0.25rem; // mb-1
-      font-family: "Roboto Mono", monospace;
+      font-family: "Roboto", monospace;
     }
 
     p {
@@ -624,7 +624,7 @@ main {
         text-align: center;
         font-weight: 400;
         width: 7rem;
-        font-family: "Roboto Mono", monospace;
+        font-family: "Roboto", monospace;
       }
     }
   }
@@ -739,7 +739,7 @@ main {
         border-radius: 0.375rem;
         max-width: 7rem;
         transition: background-color 0.2s ease;
-        font-family: "Roboto Mono", monospace;
+        font-family: "Roboto", monospace;
 
         .group-hover & {
           background-color: #3b82f6; // blue-500
@@ -753,7 +753,7 @@ main {
   .sidebar {
     p {
       font-size: 12px;
-      font-family: "Roboto Mono", monospace;
+      font-family: "Roboto", monospace;
     }
   }
 }
@@ -776,13 +776,13 @@ main {
 
   h4 {
     font-size: 20px;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto", monospace;
     margin-bottom: 25px;
     line-height: 25px;
   }
   p {
     font-size: 16px;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto", monospace;
     margin-bottom: 15px;
     line-height: 20px;
   }
@@ -810,7 +810,7 @@ main {
 
   h3 {
     font-size: 20px;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto", monospace;
     max-width: 450px;
     line-height: 25px;
 
@@ -846,7 +846,7 @@ main {
       }
       h4 {
         font-size: 16px;
-        font-family: "Roboto Mono", monospace;
+        font-family: "Roboto", monospace;
         font-weight: 500;
         color: #fff;
       }

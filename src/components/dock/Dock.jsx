@@ -77,11 +77,11 @@ const Dock = () => {
   return (
     <div id="dock">
       <div ref={DockRef} className={"dock-container"}>
-        {dockApps.map(({ id, icon, name, canOpen }) => (
+        {dockApps.map(({ id, icon, name, canOpen,mobileView}) => (
           <div key={id ?? name} className="dock-item">
             <button
               type="button"
-              className="dock-icon"
+              className={` ${mobileView ? '':'hiddenmobileDock'}   dock-icon`}
               aria-label={name}
               data-tooltip-id="dock-tooltip"
               data-tooltip-content={name}

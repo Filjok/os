@@ -25,7 +25,7 @@ const Resume = () => {
       </div>
 
       <div className="max-heightWrapper">
-        <Document file="/files/FILJO-KURIAN-2025.pdf    ">
+        <Document file="/files/FILJO-KURIAN-2025.pdf     ">
           <Page pageNumber={1} renderTextLayer renderAnnotationLayer />
           <Page pageNumber={2} renderTextLayer renderAnnotationLayer />{" "}
         </Document>

@@ -3,7 +3,6 @@ import { Search } from "lucide-react";
 import WindowWrapper from "../hoc/WindowWrapper";
 import { locations } from "../constants";
 import useLocationStore from "../store/location";
-import { use } from "react";
 import useWindowStore from "../store/window";
 
 const Finder = () => {

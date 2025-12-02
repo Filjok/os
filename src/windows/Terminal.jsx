@@ -11,16 +11,15 @@ const Terminal = () => {
         <h2>Tech Stack</h2>
       </div>
       <div className="techstack">
-        <p>
-         Creative Frontend Developer
-         
-        </p>
+        <p>Creative Frontend Developer</p>
 
         <ul className="content">
           {techStack.map(({ category, items }, index) => (
             <li key={index}>
-              <Check size={20} className="check" />
-              <h3>{category}</h3>
+              <div>
+                <Check size={20} className="check" />
+                <h3>{category}</h3>
+              </div>
               <ul>
                 {items.map((item, idx) => (
                   <li key={idx}>

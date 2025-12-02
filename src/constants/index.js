@@ -40,12 +40,14 @@ const dockApps = [
     id: "finder",
     name: "Portfolio", // was "Finder"
     icon: "finder.png",
+    mobileView: false,
     canOpen: true,
   },
   {
     id: "safari",
     name: "Articles", // was "Safari"
     icon: "safari.png",
+    mobileView: false,
     canOpen: true,
   },
 
@@ -53,18 +55,23 @@ const dockApps = [
     id: "contact",
     name: "Contact", // or "Get in touch"
     icon: "contact.png",
+    mobileView: true,
     canOpen: true,
   },
   {
     id: "terminal",
     name: "Skills", // was "Terminal"
     icon: "terminal.png",
+    mobileView: true,
+
     canOpen: true,
   },
   {
     id: "trash",
     name: "Archive", // was "Trash"
     icon: "trash.png",
+    mobileView: true,
+
     canOpen: false,
   },
 ];
@@ -185,7 +192,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
+          imageUrl: "/images/techwarelab.png",
         },
       ],
     },
@@ -227,7 +234,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
 
-          imageUrl: "/images/project-2.png",
+          imageUrl: "/images/infithra.png",
         },
       ],
     },
@@ -268,7 +275,7 @@ const WORK_LOCATION = {
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
-          imageUrl: "/images/project-3.png",
+          imageUrl: "/images/activefitness.png",
         },
       ],
     },
@@ -311,7 +318,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
+          imageUrl: "/images/meloc.png",
         },
       ],
     },
@@ -354,7 +361,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
+          imageUrl: "/images/bvb-pro.png",
         },
       ],
     },
